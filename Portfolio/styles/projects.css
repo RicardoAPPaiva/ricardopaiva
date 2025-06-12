@@ -1,0 +1,14 @@
+.arrow-icon {
+  width: 25px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.arrow-icon:hover {
+  transform: scale(1.1);
+}
+
+.arrow-link {
+  display: inline-block;
+}

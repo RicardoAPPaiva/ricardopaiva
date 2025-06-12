@@ -1,0 +1,10 @@
+.contact-item img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
