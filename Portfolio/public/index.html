@@ -10,21 +10,9 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
 
-      .zoom-text {
-        transition: transform 0.3s ease;
-        display: inline-block;
-      }
-
-      .zoom-text:hover {
-        transform: scale(1.1);
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body class="d-flex flex-column">
     <div
@@ -32,8 +20,7 @@
     >
       <div class="mb-3">
         <img
-          class="rounded-circle img-fluid mx-auto d-block mb-4"
-          style="width: 150px; height: 150px"
+          class="rounded-circle img-fluid mx-auto d-block mb-4 avatar-image"
           src="../assets/images/personal-image.png"
         />
       </div>
@@ -43,7 +30,7 @@
         </h1>
         <figure>
           <blockquote class="blockquote">
-            <p>Senior Fullstack Software Engineer</p>
+            <a>Senior Fullstack Software Engineer</a>
           </blockquote>
           <figcaption class="blockquote-footer">TechLead .NET</figcaption>
         </figure>
@@ -52,7 +39,6 @@
         <button
           type="button"
           class="btn font-monospace mb-4 fs-5 rounded-pill zoom-text"
-          style="--bs-btn-hover-bg: #e0e0e0; --bs-btn-hover-color: black"
           onclick="window.location.href='./pages/About.html'"
         >
           About
@@ -60,7 +46,6 @@
         <button
           type="button"
           class="btn font-monospace mb-4 fs-5 rounded-pill zoom-text"
-          style="--bs-btn-hover-bg: #e0e0e0; --bs-btn-hover-color: black"
           onclick="window.location.href='./pages/Projects.html'"
         >
           Projects
@@ -68,7 +53,6 @@
         <button
           type="button"
           class="btn font-monospace mb-4 fs-5 rounded-pill zoom-text"
-          style="--bs-btn-hover-bg: #e0e0e0; --bs-btn-hover-color: black"
           onclick="window.location.href='./pages/resume.html'"
         >
           Resume
@@ -76,7 +60,6 @@
         <button
           type="button"
           class="btn font-monospace fs-5 rounded-pill zoom-text"
-          style="--bs-btn-hover-bg: #e0e0e0; --bs-btn-hover-color: black"
           onclick="window.location.href='./pages/Contacts.html'"
         >
           Contacts

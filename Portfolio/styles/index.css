@@ -1,0 +1,8 @@
+button:hover{
+    text-decoration: underline;
+}
+
+.avatar-image{
+    width: 150px;
+    height: 150px;
+}

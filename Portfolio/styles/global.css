@@ -1,0 +1,17 @@
+p {
+  font-family: monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.zoom-text {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.zoom-text:hover {
+  transform: scale(1.1);
+}
