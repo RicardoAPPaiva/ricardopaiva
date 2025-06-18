@@ -13,19 +13,33 @@
 
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/index.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }  
+    </style>
   </head>
-  <body class="d-flex flex-column">
+  <body
+    class="d-flex justify-content-center align-items-center vh-100 flex-column"
+  >
     <div
       class="container d-flex flex-column justify-content-center align-items-center flex-grow-1"
     >
-      <div class="mb-3">
+      <div>
         <img
+          style="width: 150px; height: 150px"
           class="rounded-circle img-fluid mx-auto d-block mb-4 avatar-image"
           src="../assets/images/personal-image.png"
         />
       </div>
       <div class="mb-4 text-center">
-        <h1 class="text-uppercase fw-bold font-monospace zoom-text">
+        <h1 class="text-uppercase fw-bold font-monospace zoom-text-no-underline"
+        style="cursor: default;">
           Ricardo Paiva
         </h1>
         <figure>
@@ -35,41 +49,41 @@
           <figcaption class="blockquote-footer">TechLead .NET</figcaption>
         </figure>
       </div>
-      <div class="d-flex flex-column w-25">
-        <button
-          type="button"
-          class="btn font-monospace mb-4 fs-5 rounded-pill zoom-text"
+      <div class="d-flex flex-column w-25 justify-content-center align-items-center">
+        <a
+          class="font-monospace mb-1 fs-5 zoom-text text-black"
+          style="cursor: pointer"
           onclick="window.location.href='./pages/About.html'"
         >
           About
-        </button>
-        <button
-          type="button"
-          class="btn font-monospace mb-4 fs-5 rounded-pill zoom-text"
+        </a>
+        <a
+          class="font-monospace mb-1 fs-5 zoom-text text-black"
+          style="cursor: pointer"
           onclick="window.location.href='./pages/Projects.html'"
         >
           Projects
-        </button>
-        <button
-          type="button"
-          class="btn font-monospace mb-4 fs-5 rounded-pill zoom-text"
+        </a>
+        <a
+          class="font-monospace mb-1 fs-5 zoom-text  text-black"
+          style="cursor: pointer"
           onclick="window.location.href='./pages/resume.html'"
         >
           Resume
-        </button>
-        <button
-          type="button"
-          class="btn font-monospace fs-5 rounded-pill zoom-text"
+        </a>
+        <a
+          class="font-monospace fs-5 zoom-text text-black"
+          style="cursor: pointer"
           onclick="window.location.href='./pages/Contacts.html'"
         >
           Contacts
-        </button>
+        </a>
       </div>
     </div>
 
     <!-- Footer fixed at bottom of viewport -->
     <footer
-      class="text-black text-center font-monospace text-uppercase py-2 mt-auto"
+      class="text-black text-center font-monospace text-uppercase py-2 mt-5  bottom-0 start-0 end-0 text-center p-3"
     >
       Copyright &copy; Ricardo Paiva &reg;
     </footer>
