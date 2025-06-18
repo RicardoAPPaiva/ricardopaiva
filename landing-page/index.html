@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ricardo Paiva's Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
@@ -13,80 +13,48 @@
 
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/global.css" />
-    <style>
-      body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      main {
-        flex: 1;
-      }  
-    </style>
   </head>
-  <body
-    class="d-flex justify-content-center align-items-center vh-100 flex-column"
-  >
-    <div
+  <body>
+    <main
       class="container d-flex flex-column justify-content-center align-items-center flex-grow-1"
     >
-      <div>
+      <section class="text-center">
         <img
-          style="width: 150px; height: 150px"
-          class="rounded-circle img-fluid mx-auto d-block mb-4 avatar-image"
           src="assets/images/personal-image.png"
+          alt="Portrait of Ricardo Paiva"
+          class="rounded-circle img-fluid mb-4 avatar-image"
         />
-      </div>
-      <div class="mb-4 text-center">
-        <h1 class="text-uppercase fw-bold font-monospace zoom-text-no-underline"
-        style="cursor: default;">
-          Ricardo Paiva
-        </h1>
+        <h1 class="text-uppercase fw-bold font-monospace">Ricardo Paiva</h1>
         <figure>
           <blockquote class="blockquote">
-            <a>Senior Fullstack Software Engineer</a>
+            <p class="mb-0">Senior Fullstack Software Engineer</p>
           </blockquote>
           <figcaption class="blockquote-footer">TechLead .NET</figcaption>
         </figure>
-      </div>
-      <div class="d-flex flex-column w-25 justify-content-center align-items-center">
-        <a
-          class="font-monospace mb-1 fs-5 zoom-text text-black mb-2"
-          style="cursor: pointer"
-          onclick="window.location.href='./pages/about.html'"
+      </section>
+
+      <nav
+        class="d-flex flex-column w-25 justify-content-center align-items-center mt-4"
+        aria-label="Primary navigation"
+      >
+        <a href="./pages/about.html" class="custom-nav-link mb-2">About</a>
+        <a href="./pages/projects.html" class="custom-nav-link mb-2"
+          >Projects</a
         >
-          About
-        </a>
-        <a
-          class="font-monospace mb-1 fs-5 zoom-text text-black mb-2"
-          style="cursor: pointer"
-          onclick="window.location.href='./pages/projects.html'"
+        <a href="./pages/resume.html" class="custom-nav-link mb-2">Resume</a>
+        <a href="./pages/contacts.html" class="custom-nav-link mb-2"
+          >Contacts</a
         >
-          Projects
-        </a>
-        <a
-          class="font-monospace mb-1 fs-5 zoom-text  text-black mb-2"
-          style="cursor: pointer"
-          onclick="window.location.href='./pages/resume.html'"
-        >
-          Resume
-        </a>
-        <a
-          class="font-monospace fs-5 zoom-text text-black mb-2"
-          style="cursor: pointer"
-          onclick="window.location.href='./pages/contacts.html'"
-        >
-          Contacts
-        </a>
-      </div>
-    </div>
+      </nav>
+    </main>
 
     <div class="corner-banner">UNDER CONSTRUCTION</div>
-    <!-- Footer fixed at bottom of viewport -->
+
     <footer
-      class="text-black text-center font-monospace text-uppercase py-2 mt-5  bottom-0 start-0 end-0 text-center p-3"
+      class="text-black text-center font-monospace text-uppercase py-3"
+      role="contentinfo"
     >
-      Copyright &copy; Ricardo Paiva &reg;
+      &copy; Ricardo Paiva
     </footer>
   </body>
 </html>
