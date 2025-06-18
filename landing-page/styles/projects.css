@@ -1,21 +1,7 @@
-p {
-  font-family: monospace;
-}
-
 html,
 body {
   height: 100%;
 }
-
-.zoom-text {
-  transition: transform 0.3s ease;
-  display: inline-block;
-}
-
-.zoom-text:hover {
-  transform: scale(1.1);
-}
-
 
 .arrow-icon {
   width: 25px;
@@ -32,5 +18,12 @@ body {
   display: inline-block;
 }
 
+b {
+  display: inline-block; /* Needed for transform to work properly */
+  transition: transform 0.1s ease;
+  text-decoration: underline;
+}
 
-
+b:hover {
+  transform: scale(1.05);
+}
